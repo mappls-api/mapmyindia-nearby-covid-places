@@ -1,9 +1,15 @@
 [<img src="https://www.mapmyindia.com/api/img/mapmyindia-api.png" height="40"/> </p>](https://www.mapmyindia.com/api)
 
-# Open Nearby COVID Places Search Widget
+# Nearby COVID Places Search Widget
 
 ## Introduction
-Easy to integrate Nearby COVID Places Search Widget by MapmyIndia.
+This is an easy to integrate Nearby COVID Places Search Widget by MapmyIndia.
+
+Every person can benefit from being able to easily find nearby COVID vaccination centre, see them on a map, get directions, and get more information about them. 
+
+We at MapmyIndia are continuously updating the database of COVID-related places, such as vaccine centres, treatment centres/hospitals, containment zones, testing centres, isolation centres etc.
+
+This widget allows any website or app developer to easily integrate this information for the benefit of your users and visitors. 
 
 ![](https://mmi-api-team.s3.ap-south-1.amazonaws.com/API-Team/covid-place-widget1.gif)
 
