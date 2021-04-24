@@ -55,24 +55,24 @@ On reloading your web page after integrating the code -
 
 ## Sample Code
 ```html
+
 <html>
 <head>
-
-	<!-- Include the following MapmyIndia javascript code into cowin app webpage -->
-	<script src=“https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js”></script>
+  
+  <!-- Include the following MapmyIndia javascript code into cowin app webpage -->
+  <script src="https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js"></script>
 
 </head>
 <body>
-	
 
-	<!-- define the div into which the nearby COVID places widget from MapmyIndia needs to be loaded -->
-	<div id=“nearby-covid-places-mapmyindia”></div>
+   <!-- define the div into which the nearby COVID places widget from MapmyIndia needs to be loaded --> 
+   <div id="nearby-covid-places-mapmyindia"></div>
 
-	<!-- call the following code AFTER the mapmyindia javascript file has loaded -->
-	<script>
-	    loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-covid-places-mapmyindia"));
-	</script>
-</body>
+   <!-- call the following code AFTER the mapmyindia javascript file has loaded -->    
+   <script type="text/javascript">
+        loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-covid-places-mapmyindia"));
+    </script>
+</body>                                                                                                                          
 </html>
 ```
 
