@@ -74,6 +74,7 @@ On reloading your web page after integrating the code -
     </script>
 </body>                                                                                                                          
 </html>
+
 ```
 
 ## Sample CSS 
