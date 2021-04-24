@@ -67,11 +67,13 @@ On reloading your web page after integrating the code -
     </script>
 </head>
 <body>
+	
 
 // define the div into which the nearby COVID places widget from MapmyIndia needs to be loaded
 	<div id=“nearby-covid-places-mapmyindia”></div>
 
 </body>
+</html>
 ```
 
 ## Sample CSS 
