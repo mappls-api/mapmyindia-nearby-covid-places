@@ -59,7 +59,7 @@ On reloading your web page after integrating the code -
 <html>
 <head>
   
-  <!-- Include the following MapmyIndia javascript code into cowin app webpage -->
+  <!-- Include the following MapmyIndia javascript code into your webpage -->
   <script src="https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js"></script>
 
 </head>
