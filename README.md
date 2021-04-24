@@ -5,7 +5,7 @@
 ## Introduction
 Easy to integrate Nearby COVID Places Search Widget by MapmyIndia.
 
-![](https://mmi-api-team.s3.ap-south-1.amazonaws.com/API-Team/covid-place-widget.gif)
+![](https://mmi-api-team.s3.ap-south-1.amazonaws.com/API-Team/covid-place-widget1.gif)
 
 *The image is for illustrative purposes only on how the widget might look like once integrated.
 
