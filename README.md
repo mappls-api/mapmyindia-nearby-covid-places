@@ -27,7 +27,6 @@ The widget can be used to search for vaccination centres, testing centres, sampl
 <br>
 
 ## 3 Step process to integrate Nearby COVID Places widget in any Web App
-
 <br>
 
 1. #### Step 1
