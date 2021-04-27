@@ -11,6 +11,8 @@ We at MapmyIndia are continuously updating the database of COVID-related places,
 
 We're helping ANY website or app developer to easily integrate this information, as a FREE widget, for the benefit of your users and visitors. 
 
+The widget can be used to search for vaccination centres, testing centres, sample collection centres, treatment centres, quarantine centres and micro containment zones across India.
+
 ![](https://mmi-api-team.s3.ap-south-1.amazonaws.com/API-Team/covid-place-widget1.gif)
 
 *The image is for illustrative purposes only on how the widget might look like once integrated.
@@ -18,7 +20,10 @@ We're helping ANY website or app developer to easily integrate this information,
 ## Version History
 | Version | Last Updated | Author | Release Note |
 | --- | --- | --- | --- |
-| 1.0 | 24 April 2021 | Kunal | Initial Commit |
+| 2.0 | 27 April 2021 | Kunal Bharti([KB](https://github.com/kunalbharti)) | Can search for Vaccination Centres, Testing Centres, Treatment Centres, Containment Zones,  Sample Collection Centres, Quarantine Centres |
+| 1.1 | 24 April 2021 | Rohan Verma([RV](https://github.com/rohanverma85)) | Sample Updated |
+| 1.0 | 24 April 2021 | Kunal Bharti([KB](https://github.com/kunalbharti)) | Initial Commit |
+
 <br>
 
 ## 3 Step process to integrate Nearby COVID Places widget in any Web App
@@ -78,12 +83,16 @@ On reloading your web page after integrating the code -
    <script type="text/javascript">
         loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-covid-places-mapmyindia"));
     </script>
-</body>                                                                                                                          
+</body>
+
 </html>
 
 ```
 
-## Sample CSS 
+
+## How to customize CSS to match the style of the plugin with your web app
+
+### Sample CSS 
 <strong>(change NOT recommended)</strong>
 ```css 
 https://maps.mapmyindia.com/covid-places/css/custom.css
@@ -93,7 +102,79 @@ To be passed as
 ```js
 loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-covid-places-mapmyindia"),{css:"https://maps.mapmyindia.com/covid-places/css/custom.css"});
 ```
+<br>
 
+## How to Search for Different Categories of COVID Places
+
+The Nearby COVID Places Widget already has the capabilities to search for not only nearby vaccination centres, but other important COVID places as well. 
+To search for other categories of COVID places, a simple additional parameter in the script URL of the widget enables you to specify which category you want the widget to search for.
+<br>
+
+### Sample Search for Corona Treatment Centres
+
+#### Script URL
+
+```html
+<script src="https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js?category=HSPTMT"></script>
+```
+
+#### Sample Code
+```html
+<html>
+<head>
+  
+  <!-- Include the following MapmyIndia javascript code into your webpage -->
+  <script src="https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js?category=HSPTMT"></script>
+
+</head>
+<body>
+
+   <!-- define the div into which the nearby COVID places widget from MapmyIndia needs to be loaded --> 
+   <div id="nearby-covid-places-mapmyindia"></div>
+
+   <!-- call the following code AFTER the mapmyindia javascript file has loaded -->    
+   <script type="text/javascript">
+        loadNearbyCovidCentresMapmyIndiaDiv(document.getElementById("nearby-covid-places-mapmyindia"));
+    </script>
+</body>
+
+</html>
+```
+<br>
+
+### Other Samples for COVID Nearby Places
+
+Read the following [Wiki](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories) article to see more sample of how to search for other types of COVID places using the Nearby Search Widget.
+<br><br>
+
+## How to Embed the Widget as an iFrame
+
+The most important thing to remember while embedding this widget in an iFrame is that, an iFrame by default, does NOT allow for geolocation access. This means that the widget won't get the current location of the user of the web page to allow searching for COVID places near his location. 
+
+To overcome this,  please ALWAYS add attribute of allowing geolocation in the iFrame tag as follows: 
+
+### Sample for iFrame embedding of Nearby COVID Places Widget
+```html
+<iframe width="100%" height="100%" src="https://maps.mapmyindia.com/covid-places/embed?category=HSPVCC" allow="geolocation" >
+</iframe>
+```
+<br>
+
+### Native Webview
+<strong>The same URL can also be used for `Native WebView` implmentation of the Nearby COVID Places Widget.</strong>
+<br><br>
+
+## Appendix: COVID Places Categories Supported
+| Category Code | Description |
+| --- | --- |
+| [HSPVCC](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-vaccination-centres) | Corona Vaccination Centres |
+| [HSPTST](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-testing-centres) | Corona Testing Centres |
+| [HSPTMT](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-treatment-centres) | Corona Treatment Centres |
+| [HSPCOV](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-quarantine-centres) | Corona Quarantine Centre |
+| [HSPSCC](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-sample-collection-centres) | Corona Sample Collection Centre |
+| [CNTZON](https://github.com/MapmyIndia/mapmyindia-nearby-covid-places/wiki/Samples-For-Searching-More-Covid-Categories#sample-search-for-corona-micro-containment-zones) | Corona Micro Containment Zones |
+
+<br></br>
 For any queries and support, please contact: 
 
 [<img src="https://www.mapmyindia.com/images/logo.png" height="50"/> </p>](https://www.mapmyindia.com/api)
