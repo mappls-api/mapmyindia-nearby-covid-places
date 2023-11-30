@@ -1,3 +1,5 @@
+# DEPRECATED
+This repository is no longer in active development & use.<br>
 [<img src="https://www.mapmyindia.com/api/img/mapmyindia-api.png" height="40"/> </p>](https://www.mapmyindia.com/api)
 
 # Nearby COVID Vaccine Centres, Hospitals etc Search Widget (FREE)
